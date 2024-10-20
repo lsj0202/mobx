@@ -13,14 +13,6 @@ class TodoBoxVm {
     return todoModel.author;
   }
 
-  setNewContents(value: string) {
-    todoModel.contents = value;
-  }
-
-  setNewAuthor(value: string) {
-    todoModel.author = value;
-  }
-
   changeTodo(id: number, contents: string, author: string) {
     const todo = todoModel.todoList.find(todo => todo.id === id);
     if (todo) {
