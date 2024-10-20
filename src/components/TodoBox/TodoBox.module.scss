@@ -1,0 +1,29 @@
+.container {
+  box-sizing: border-box;
+  padding: 0.7rem;
+  width: 100%;
+  height: 120px;
+  background-color: rgb(243, 243, 243);
+  border-radius: 0.5rem;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  
+  .contents {
+    white-space: normal;
+    word-break: break-word; // 긴 단어를 자동으로 줄바꿈
+    overflow-wrap: break-word;
+  }
+
+  .authorWrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .delete {
+      color: red;
+      cursor: pointer;
+    }
+  }
+}
